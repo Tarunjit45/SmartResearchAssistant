@@ -1,0 +1,10 @@
+{
+    "presets": [
+      "@babel/preset-env",  // Transpile modern JavaScript to work in older browsers
+      "@babel/preset-react" // Transpile JSX to regular JavaScript
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime" // Optimize the use of helper functions
+    ]
+  }
+  
