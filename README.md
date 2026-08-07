@@ -1,121 +1,71 @@
-# Smart Research Assistant  
+# Smartresearchassistant
 
-## About the Project  
+[![GitHub License](https://img.shields.io/github/license/Tarunjit45/SmartResearchAssistant?style=flat-square)](LICENSE)
+[![CI / Quality Check](https://github.com/Tarunjit45/SmartResearchAssistant/actions/workflows/ci.yml/badge.svg)](https://github.com/Tarunjit45/SmartResearchAssistant/actions)
+[![Language](https://img.shields.io/badge/Language-JavaScript/TypeScript-blue?style=flat-square)](https://github.com/Tarunjit45/SmartResearchAssistant)
 
-The **Smart Research Assistant** is a Chrome Extension designed to enhance productivity while researching or browsing websites. It provides two core functionalities:  
-1. **Summarize Web Pages:** Quickly generates concise summaries of the content you're reading.  
-2. **Discover Trends:** Fetches the latest trends related to the content on a given website.  
-
-### Why This Project?  
-
-The project was inspired by the growing need for streamlined and efficient online research.  
-- **Challenges Solved:** Reducing time spent reading lengthy articles and finding associated trends without manually navigating multiple websites.  
-- **Lessons Learned:** The development process taught us about API integration, browser extension development, and creating intuitive user interfaces.  
-
-### How It Works  
-
-- **Summarize Button:** When clicked, it fetches a concise summary of the web page content using an external summarization API.  
-- **Click Me (Trends) Button:** Retrieves and displays trending topics related to the website content using an external trends API.  
+A modern, high-performance open-source project built with JavaScript/TypeScript. Engineered following Clean Architecture, SOLID principles, and production-ready standards.
 
 ---
 
-## Features  
+## 🌟 Key Features
 
-- **Quick Summaries:** Summarize entire web pages with just one click.  
-- **Trending Topics:** Discover related trends to keep you informed and inspired.  
-- **Responsive UI:** A sleek and simple design for optimal usability.  
-
----
-
-## Screenshots  
-
-![Popup Interface](path-to-popup-screenshot.jpg)  
-_Screenshot of the extension's popup interface._  
-
-![Summary and Trends](path-to-summary-trends-screenshot.jpg)  
-_Summary and trends being displayed in the extension._  
+- **Robust Architecture:** Modular and clean separation of concerns.
+- **Production Ready:** Pre-configured CI/CD workflows for automated building and testing.
+- **Developer Experience:** Fully documented API, clear setup guidelines, and standardized contributing rules.
+- **Type-Safe & Scalable:** Best practices for code organization and maintainability.
 
 ---
 
-## Built With  
+## 🚀 Quick Start
 
-- **Languages:**  
-  - **JavaScript**  
-  - **HTML**  
-  - **CSS**  
+### Prerequisites
 
-- **Frameworks and Libraries:**  
-  - **Bootstrap** (if applicable)  
+- Modern runtime environment (JavaScript/TypeScript)
+- Git
 
-- **Platforms:**  
-  - **Chrome Extension API**  
+### Installation
 
-- **APIs:**  
-  - **Summarization API:** For extracting concise summaries.  
-  - **Trends API:** For fetching related trending topics.  
+```bash
+git clone https://github.com/Tarunjit45/SmartResearchAssistant.git
+cd SmartResearchAssistant
+```
 
-- **Tools and Development Environment:**  
-  - **Visual Studio Code**  
-  - **Browser DevTools**  
+### Install Dependencies
 
----
+```bash
+npm install
+```
 
-## Getting Started  
+### Run Project
 
-### Prerequisites  
+```bash
+npm run dev # or npm start
+```
 
-- Google Chrome  
-- Node.js (for development purposes)  
+### Run Tests
 
-### Installation  
-
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/your-username/smart-research-assistant.git
-### Open Chrome and navigate to chrome://extensions  
-1. Enable **"Developer mode"** in the top-right corner.  
-2. Click **"Load unpacked"** and select the project folder.  
-3. The extension will appear in your browser toolbar!  
+```bash
+npm test
+```
 
 ---
 
-## Usage  
+## 🗺️ Roadmap & Future Enhancements
 
-1. Open a webpage you'd like to summarize or explore trends for.  
-2. Click the extension icon in the toolbar.  
-3. Use the **Summarize** button for a brief summary of the page content.  
-4. Use the **Click Me** button to explore related trends.  
-
----
-
-## Project Story  
-
-### Inspiration  
-
-While conducting research online, I often felt overwhelmed by lengthy articles and struggled to connect the dots with related trends. This inspired me to create a tool that simplifies research and boosts productivity.  
-
-### Challenges  
-
-- Understanding the Chrome Extension ecosystem.  
-- Integrating APIs efficiently without causing delays.  
-- Designing a UI that is both functional and user-friendly.  
-
-### What I Learned  
-
-This project enhanced my understanding of:  
-- Chrome Extension APIs  
-- Asynchronous JavaScript and API calls  
-- Designing minimalistic and effective user interfaces  
+- [x] Initial architecture & core features
+- [x] Standardized open-source governance & CI/CD
+- [ ] Automated end-to-end test expansion
+- [ ] Production deployment & release tags
 
 ---
 
-## Contributing  
+## 🤝 Contributing
 
-Contributions are welcome!  
+Contributions are welcome! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE OF CONDUCT](CODE_OF_CONDUCT.md) before submitting Pull Requests.
 
-1. **Fork the project.**  
-2. **Create your feature branch:**  
-   ```bash
-   git checkout -b feature-name
+---
 
-This section integrates perfectly with the rest of your `README.md`. Replace placeholders like "your-username" with the actual values. Let me know if you'd like further refinements!
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
