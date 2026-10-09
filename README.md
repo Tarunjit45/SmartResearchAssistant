@@ -1,71 +1,59 @@
-# 🚀 SmartResearchAssistant
+# 🔍 Smart Research Assistant — Chrome Extension (Manifest V3)
 
-![Language](https://img.shields.io/badge/Language-JavaScript-blue?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Production-Active-success?style=for-the-badge)
+[![Chrome Extension](https://img.shields.io/badge/Chrome-Manifest%20V3-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](manifest.json)
+[![React](https://img.shields.io/badge/Frontend-React%20%7C%20Babel-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-## 📌 Overview
+**Smart Research Assistant** is an AI-powered browser extension built on Chrome's **Manifest V3** standard. It allows students, researchers, and professionals to summarize active browser tabs, translate foreign text selections, and rewrite complex technical passages on the fly without leaving their current web page.
 
-A high-performance application engineered by Tarunjit Biswas for quality and scalability.
+---
 
-## ✨ Key Features & Architecture
+## ✨ Features
 
-- **High-Performance Codebase:** Built using `JavaScript` and modern engineering principles.
-- **Modular & Scalable Design:** Structured directory tree for seamless development and deployment.
+* 📑 **One-Click Tab Summarization:** Ingests the current DOM via `content.js` and condenses long articles into executive bullet points.
+* 🌐 **Instant Highlight Translation:** Select any passage on any webpage to translate it into your target language.
+* ✍️ **Intelligent Text Rewriting:** Rephrase, expand, or simplify highlighted text for academic and professional clarity.
+* ⚡ **Manifest V3 Service Worker:** Modern background service worker (`background.js`) with active tab permissions and zero persistent background memory drain.
 
-## 🛠️ Tech Stack & Dependencies
+---
 
-- **Core Language:** `JavaScript`
-- **Libraries & Tools:** React 18, JavaScript
-- **Deployment Infrastructure:** Vercel Edge / Cloud Services
-
-## 📁 Architecture & File Layout
+## 📁 Repository Structure
 
 ```text
 SmartResearchAssistant/
-├── .babelrc
-├── .env
-├── .github
-├── .github/ISSUE_TEMPLATE
-├── .github/ISSUE_TEMPLATE/bug_report.md
-├── .github/ISSUE_TEMPLATE/feature_request.md
-├── .github/PULL_REQUEST_TEMPLATE.md
-├── .github/workflows
-├── .github/workflows/ci.yml
-├── App.js
-├── App.jsx
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── README.md
-└── ... [additional codebase files]
+├── manifest.json       # Manifest V3 extension configuration
+├── background.js       # Extension service worker
+├── content.js          # In-page content script DOM extractor
+├── App.js / App.jsx    # React popup UI interface
+├── index.js            # Extension popup DOM bootstrap
+├── index.css           # Styling rules
+├── .babelrc            # Babel transpiler preset configuration
+├── package.json        # Dependencies & build scripts
+├── LICENSE             # MIT License
+└── README.md
 ```
 
-## 🚀 Quickstart & Installation
+---
 
-### Prerequisites
-- Node.js (v18.0.0 or higher)
-- npm or yarn package manager
+## 🚀 Installation & Setup
 
-### Setup Instructions
+### 1. Build Extension
+```bash
+git clone https://github.com/Tarunjit45/SmartResearchAssistant.git
+cd SmartResearchAssistant
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Tarunjit45/SmartResearchAssistant.git
-   cd SmartResearchAssistant
-   ```
+npm install
+npm run build
+```
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+### 2. Load in Google Chrome
+1. Open Google Chrome and navigate to `chrome://extensions/`.
+2. Toggle on **Developer mode** in the top-right corner.
+3. Click **Load unpacked** and select the extension directory.
+4. Pin the Smart Research Assistant icon to your toolbar!
 
-3. **Launch development server:**
-   ```bash
-   npm run dev
-   ```
+---
 
-## 📜 Author & License
-
-Architected & Developed by **[Tarunjit Biswas](https://github.com/Tarunjit45)**.  
-Distributed under the **MIT License**.
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
